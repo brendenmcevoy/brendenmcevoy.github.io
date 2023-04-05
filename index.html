@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>Brenden McEvoy</title>
+        <link rel="stylesheet" href="/Style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdcFgVK/Kbx=" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/1c033a18a8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/Images/brendenlogo.png" alt="my logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#aboutme" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <!-- intro -->
+
+        <section class="intro" id="home">
+            <h1 class="section-title section-title-intro">
+                Hi, I'm <strong>Brenden McEvoy</strong>
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">software dev</p>
+            <img src="/Images/me.png" alt="a photo of me, brenden." class="intro-img">
+        </section>
+
+        <!-- about me-->
+        <section class="about-me" id="aboutme">
+            <h2 class="section-title section-title-aboutme">About Me</h2>
+            <p class="section-subtitle section-subtitle-aboutme"> Enthusiastic developer currently living in Utah.</p>
+
+            <div class="about-me-body">
+                <p>I am a recent graduate from Ogden-Weber Technical College's Software Technology program. I have learned a lot over the past two years.
+                    <strong><br>Including: <br> C#<br>SQL <br> ASP.NET basics <br> WPF <br> HTML and CSS</strong>
+                </p>
+                <p>I enjoy spending time with my pets, playing video games, music, and enjoying nature. </p>               
+            </div>
+
+            <img src="/Images/brendenandjoey.jpg" alt="me again" class="about-me-img">
+        </section>
+
+        <!-- projects -->
+        <section class="section-projects" id="projects">
+            <h2 class="section-title section-title-projects">My Projects</h2>
+            <p class="section-subtitle section-subtitle-projects"> A collection of my work.</p>
+            <div class="portfolio">
+                <a href="portfolio-item-pizzaNinja.html" class="portfolio-item">
+                    <img src="/Images/LSP.png" alt="Pizza Ninja Logo" class="portfolio-img">
+                </a>
+
+                <a href="portfolio-item-CKK.html" class="portfolio-item">
+                    <img src="/Images/CKKlogo.png" alt="Corey's Knick Knacks logo" class="portfolio-img">
+                </a>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+
+            <div class="container">
+                <form action="https://formsubmit.co/brenden.mcevoy24@gmail.com" method="post">
+              
+                  <input type="hidden" name="-next" value="thankyou.html">
+                  <input type="hidden" name="-subject" value="Email from Portfolio Site">
+
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="Email" placeholder="Your email..." required>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer" id="footer">
+            <a href="mailto:brenden.mcevoy24@gmail.com" class="footer-link">brenden.mcevoy@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list-item"><a href="" class="social-list-link"><i class="fa-brands fa-square-github"></i></i></a></li>
+                <li class="social-list-item"><a href="" class="social-list-link"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="/JavaScript/index.js"></script>
+    </body>    
+</html>
